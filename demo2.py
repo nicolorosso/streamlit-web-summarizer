@@ -48,15 +48,19 @@ def main():
 		st.subheader("Sto lavorando anche con altri modelli, per il momento condivido questa demo con BERT ")
 
 		message = st.text_area("Enter Text","Type Here....")
-		summary_options = st.selectbox("Choose Summarizer",['bert','cercherò in settimana di caricare anche altri modelli per avere più confronti su performance'])
+		summary_options = st.selectbox("Choose Summarizer",['bert','Bart-facebook']
 		if st.button("Summarize"):
 			if summary_options == 'bert':
 				st.text("Using Bert Summarizer ..")
 				summary_result = translate(message)
 				
-			elif summary_options == 'cercherò in settimana di caricare anche altri modelli per avere più confronti su performance':
-				st.text("Using Bert Summarizer ..")
-				summary_result = translate(message)
+			elif summary_options == 'pipeline api':
+				#st.text("Using Pipeline API Summarizer ..")
+				#summary_result = translate3(message)
+				
+			elif summary_options == 'Bart-facebook':
+				st.text("Using Bart-facebook Summarizer ..")
+				summary_result = translate2(message)
 			
 			#elif summary_options == 'pipeline api':
 				#st.text("Using Pipeline API Summarizer ..")
@@ -66,10 +70,10 @@ def main():
 				#st.text("Using t-5 Summarizer ..")
 				#summary_result = translate4(message)
 				
-			#else:
-				#st.warning("Using Default Summarizer")
-				#st.text("Using Gensim Summarizer ..")
-				#summary_result = translate(message)
+			else:
+				st.warning("Using Default Summarizer")
+				st.text("Using Bert Summarizer ..")
+				summary_result = translate2(message)
 			st.success(summary_result)
 
 if __name__ == '__main__':
