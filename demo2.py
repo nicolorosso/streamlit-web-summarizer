@@ -48,7 +48,7 @@ def main():
 		st.subheader("Sto lavorando anche con altri modelli, per il momento condivido questa demo con BERT ")
 
 		message = st.text_area("Enter Text","Type Here....")
-		summary_options = st.selectbox("Choose Summarizer",['bert','Bart-facebook']
+		summary_options = st.selectbox("Choose Summarizer",['bert','Bart-facebook'])
 		if st.button("Summarize"):
 			if summary_options == 'bert':
 				st.text("Using Bert Summarizer ..")
