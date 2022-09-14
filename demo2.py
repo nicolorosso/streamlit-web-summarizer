@@ -59,7 +59,7 @@ def main():
 
 	# Summarization
 	if st.checkbox("Get the summary of your text"):
-		st.subheader("Sto lavorando anche con altri modelli, per il momento condivido questa demo con BERT ")
+		st.subheader("In questa demo sono state utilizzate diversi parametri per il modello BERT. N.periodi corrisponde all'originale num_sentences, la quale consente di scegliere la lunghezza del riassunto finale.")
 
 		message = st.text_area("Enter Text","Type Here....")
 		summary_options = st.selectbox("Choose Summarizer",['bert n.periodi:3','bert n.periodi:4', 'bert n.periodi:5', 'bert n.periodi:6'])
