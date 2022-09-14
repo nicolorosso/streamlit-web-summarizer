@@ -6,6 +6,7 @@ auth_key = "9d5d6377-86f6-5862-90e2-783b691526a2:fx"
 translator = deepl.Translator(auth_key)
 
 from summarizer import Summarizer
+from transformers import AutoTokenizer, AutoModelForSeq2SeqLM 
 #from transformers import pipeline
 
 
