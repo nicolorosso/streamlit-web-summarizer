@@ -62,7 +62,7 @@ def main():
 		st.subheader("Sto lavorando anche con altri modelli, per il momento condivido questa demo con BERT ")
 
 		message = st.text_area("Enter Text","Type Here....")
-		summary_options = st.selectbox("Choose Summarizer",['bert n.periodi:3','bert n.periodi:4', 'bert n.periodi:5', 'bert n.periodi:6', 'bert n.periodi:2'])
+		summary_options = st.selectbox("Choose Summarizer",['bert n.periodi:3','bert n.periodi:4', 'bert n.periodi:5', 'bert n.periodi:6'])
 		if st.button("Summarize"):
 			if summary_options == 'bert n.periodi:3':
 				st.text("Using bert n.periodi:3 ..")
