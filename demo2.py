@@ -54,9 +54,6 @@ def main():
 				st.text("Using Bert Summarizer ..")
 				summary_result = translate(message)
 				
-			elif summary_options == 'pipeline api':
-				#st.text("Using Pipeline API Summarizer ..")
-				#summary_result = translate3(message)
 				
 			elif summary_options == 'Bart-facebook':
 				st.text("Using Bart-facebook Summarizer ..")
