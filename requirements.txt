@@ -1,0 +1,6 @@
+streamlit==1.12.2
+deepl==1.10.0
+transformers==4.21.3
+bert-extractive-summarizer==0.10.1
+torch==1.12.1
+sentencepiece==0.1.97
